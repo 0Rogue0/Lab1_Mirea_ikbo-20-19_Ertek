@@ -1,28 +1,31 @@
 package Lab1;
 import java.lang.*;
-public class Book {
-    private String author;
-    private int year;
+public class Ball {
+    private String color;
+    private int radius;
 
-    public Book(String a, int y){
-        author = a;
-        year = y;
+    public Ball(String c, int r){
+        color = c;
+        radius = r;
     }
 
-    public Book(String a){
-        author = a;
-        year = 1966;
+    public Ball(String c){
+        color = c;
+        radius = 0;
     }
 
-    public Book() {
-        author = "Tolstoy";
-        year = 1867;
+    public Ball(){
+        color = "Blue";
+        radius = 0;
     }
 
-    public void setYear(int year) {this.year = year;}
-    public void setAuthor(String author) {this.author = author;}
-    public String getAuthor() {return author;}
-    public int getYear() {return year;}
-    public String toString() {return "Book`s author " + author + ", and its date of issue is — " + year;}
+    public void setRadius(int radius) {this.radius = radius;}
+    public void setColor(String color) {this.color = color;}
+    public String getColor(String color) {return color;}
+    public int getRadius() {return radius;}
+    public String toString() {
+        return "Ball is " + color + " and his radius is " + radius;
+    }
 
 }
+
